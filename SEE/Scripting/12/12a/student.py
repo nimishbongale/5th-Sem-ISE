@@ -8,10 +8,10 @@ class Student:
         print("\nName: ",self.name,"\nAge: ",self.age,"\nMarks: ",self.marks)
 
     def accept(self):
-        self.name=raw_input('Enter name: ')
-        self.age=int(raw_input('Enter Age: '))
+        self.name=input('Enter name: ')
+        self.age=int(input('Enter Age: '))
         for i in range(3):
-            self.marks.append(int(raw_input('Enter m'+str(i+1)+": ")))
+            self.marks.append(int(input('Enter m'+str(i+1)+": ")))
 
 Student('Rahul','20',[94,92,98]).details()
 stud = Student('','',[])
