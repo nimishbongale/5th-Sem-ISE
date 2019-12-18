@@ -15,4 +15,4 @@ def atomicdictionary():
         if(i==ele):
             print("Element found!")
 
-atomicdictionary()
+

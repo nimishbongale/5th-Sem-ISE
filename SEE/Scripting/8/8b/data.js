@@ -10,7 +10,7 @@ window.onload=function()	{
 	
 				{
 					"name":"Koyna",
-					"aadhar":"1249203923",
+					"aadhar":"12459203923",
 					"tests":['DEF','LOR','LOP'],
 					"hosp":"CMH Hospital"
 				},
@@ -56,6 +56,13 @@ window.onload=function()	{
 						if(elem.id==item.hosp){
 							elem.onmouseover=function ()
 							{
+							if(item.hosp=="CMH Hospital")
+							document.getElementById('chngclr').style.color = 'cyan'
+							else if (item.hosp=="JUHU Hospital")
+							document.getElementById('chngclr').style.color = 'magenta'
+							else 
+							document.getElementById('chngclr').style.color = 'orange'
+							
 							details=item;
 							document.getElementById("name").innerHTML=details.name;
 							document.getElementById("aadhar").innerHTML=details.aadhar;
