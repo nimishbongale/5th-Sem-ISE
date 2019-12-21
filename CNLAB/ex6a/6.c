@@ -3,10 +3,11 @@
 #include<string.h>
 int checksum(int fl)
 {
-char in[100];
+char in[100],a;
 int buf[25];
 int i,sum=0,n,temp,temp1;
-scanf("%s",in);
+gets(a);
+gets(in);
 if(strlen(in)%2!=0)
         n=(strlen(in)+1)/2;
 else
