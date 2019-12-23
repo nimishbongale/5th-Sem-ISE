@@ -28,8 +28,20 @@ window.onload = () =>{
     
     jsonobj.forEach(function dothis(item,index){
         if(index<=1){
-            var def = document.createElement('th')
-            def.innerHTML = item.name+"\t|\t"+item.country+"\t|\t"+item.year+"\t|\t"+item.title+"||" 
+            var def = document.createElement('tr')
+            var a =  document.createElement('td')
+            a.innerHTML = item.name
+            var b =  document.createElement('td')
+            b.innerHTML = item.country
+            var c =  document.createElement('td')
+            c.innerHTML = item.year
+            var d =  document.createElement('td')
+            d.innerHTML = item.title
+           
+            def.appendChild(a)
+            def.appendChild(b)
+            def.appendChild(c)
+            def.appendChild(d)
             document.getElementById('auth').appendChild(def)
     }
         else{
