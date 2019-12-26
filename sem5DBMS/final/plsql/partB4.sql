@@ -3,7 +3,7 @@ DECLARE
 c_id employee_detail.ssn %type ;
 c_name employee_detail.Name %type ;
 c_salary employee_detail.salary %type ;
-c_deptno employee_detail.deptno %typ e;
+c_deptno employee_detail.deptno %type;
 CURSOR c1
 IS SELECT SSN ,NAME,SALARY,DEPTNO
 FROM EMPLOYEE_DETAIL;
