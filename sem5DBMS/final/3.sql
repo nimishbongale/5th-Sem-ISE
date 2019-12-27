@@ -68,6 +68,8 @@ SELECT BID, SNAME
 FROM RESERVES r join SAILOR s on (r.SID=s.SID);
 
 
+select bid from reserves group by bid having count(bid)=(select count(sid) from sailor);
+
 SELECT COUNT(BID), SID
 FROM RESERVES
 GROUP BY SID;
