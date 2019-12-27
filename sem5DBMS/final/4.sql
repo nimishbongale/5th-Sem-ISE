@@ -60,6 +60,8 @@ CREATE TABLE PARTT
  SELECT PNO,WNAME
  FROM SHIPMENTS s join WAREHOUSE w
  on(s.WNO=w.WNO);
+                                                   
+select pno from shipment group by pno having count(pno)=(select count(wno) from warehouse);                
 
  SELECT COUNT(PNO),WNO 
 ROM SHIPMENTS 
