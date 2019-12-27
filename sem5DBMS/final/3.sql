@@ -2,7 +2,7 @@
 
 create table BOAT
 (
-  BID varchar(6) NOT NULL,
+  BID varchar(6)NOT NULL,
   BNAME varchar(20),
   COLOUR varchar(10),
   PRIMARY KEY(BID)
@@ -24,6 +24,7 @@ Create table RESERVES
   BID varchar(6),
   SID varchar(6),
   DAY varchar(10),
+  primary key(BID,SID), 
   FOREIGN KEY(BID) references BOAT(BID) ON DELETE CASCADE,
   FOREIGN KEY(SID) references SAILOR(SID) ON DELETE CASCADE
 );
